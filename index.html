@@ -8,7 +8,7 @@
     <title>Simple Liker</title>
   </head>
   <body>
-    <div id="modal">
+    <div id="modal" class="hidden">
       <h2>Error!</h2>
       <p id="modal-message"></p>
     </div>
@@ -74,3 +74,35 @@
   </body>
   <script src="main.js" charset="utf-8"></script>
 </html>
+
+
+
+
+
+
+
+<!-- STEP 1:
+  let's locate the error modal in your HTML code. It might look something like this:
+<div id="error-modal" class="modal">
+  <div class="modal-content">
+ <span class="close">&times;</span>
+    <p>Error Message Here</p>
+  </div>
+</div> -->
+
+
+<!-- STEP 2:
+  Now, hide the error modal when the page first loads, we can add the .hidden class to the error-modal div. The .hidden class will have CSS properties that hide the element.
+<div id="error-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Error Message Here</p>
+  </div>
+</div> -->
+
+
+<!-- STEP 3:
+  Finally, in your CSS file or style section, define the .hidden class to hide the element. For example:
+.hidden {
+  display: none;
+} -->
